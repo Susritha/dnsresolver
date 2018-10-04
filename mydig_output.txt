@@ -1,0 +1,43 @@
+
+Input :  python digtool.py www.facebook.com A
+
+Output :
+QUESTION SECTION
+ www.facebook.com. IN A
+ANSWER SECTION:
+ star-mini.c10r.facebook.com. 60 IN A 31.13.71.36
+ANSWER SECTION :
+ www.facebook.com. 3600 IN CNAME star-mini.c10r.facebook.com.
+AUTHORITY SECTION :
+ c10r.facebook.com. 3600 IN NS a.ns.c10r.facebook.com.
+c10r.facebook.com. 3600 IN NS b.ns.c10r.facebook.com.
+Query Time : 116.7290210723877
+WHEN : 2018-09-26 11:15:47
+MSG SIZE rcvd: 177
+
+
+Input : python digtool.py www.facebook.com MX
+
+Output:
+QUESTION SECTION
+ www.facebook.com. IN MX
+ANSWER SECTION :
+ www.facebook.com. 3600 IN CNAME star-mini.c10r.facebook.com.
+AUTHORITY SECTION :
+ c10r.facebook.com. 300 IN SOA a.ns.c10r.facebook.com. dns.facebook.com. 1537974697 300 600 600 300
+Query Time : 116.61577224731445
+WHEN : 2018-09-26 11:13:01
+MSG SIZE rcvd: 100
+
+Input: python digtool.py www.facebook.com NS
+
+Output:
+QUESTION SECTION
+ www.facebook.com. IN NS
+ANSWER SECTION :
+ www.facebook.com. 3600 IN CNAME star-mini.c10r.facebook.com.
+AUTHORITY SECTION :
+ c10r.facebook.com. 300 IN SOA a.ns.c10r.facebook.com. dns.facebook.com. 1537974767 300 600 600 300
+Query Time : 181.84566497802734
+WHEN : 2018-09-26 11:14:50
+MSG SIZE rcvd: 100
